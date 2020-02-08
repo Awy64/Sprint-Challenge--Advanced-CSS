@@ -1,6 +1,5 @@
 .nav {
-    display: flex;
-    justify-content: center;
+    .flexCenter();
     width: 100%;
     background-color: @nav-bg;
     flex-wrap: wrap;
@@ -14,7 +13,11 @@
     }
     .navigation {
         width: 30%;
-    text-align: center;
+        text-align: center;
+        @media @mobile {
+            width: 100%;
+            margin: 1% 0;
+        }
         a{
             font-size: 1.5rem;
             text-decoration: none;
